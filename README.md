@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# 원티드 프리온보딩 코스
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

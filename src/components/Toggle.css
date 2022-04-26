@@ -1,0 +1,55 @@
+.toggle_container {
+    background-color: #d9d9d9;
+    width: 340px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.toggle_container .wrapper {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.toggle_container .wrapper .radio_button {
+    display: none;
+}
+
+.toggle_container .wrapper .radio_label {
+    width: 100%;
+    flex: 1;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.toggle_container .wrapper .radio_label span {
+    color: gray;
+    font-weight: bold;
+}
+
+.toggle_container .wrapper #tab1:checked~#label1 span,
+.toggle_container .wrapper #tab2:checked~#label2 span {
+    color: black;
+}
+
+.toggle_container .wrapper #tab1:checked~.switch {
+    left: 0%;
+}
+
+.toggle_container .wrapper #tab2:checked~.switch {
+    left: 50%;
+}
+
+.toggle_container .wrapper .switch {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    border-radius: 30px;
+    position: absolute;
+    transition: 100ms;
+}

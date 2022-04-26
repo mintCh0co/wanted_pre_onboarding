@@ -1,0 +1,56 @@
+.tab_container {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px lightgray solid;
+}
+
+.tab_wrapper {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.tab_container .tab_wrapper .radio_button {
+    display: none;
+}
+
+.tab_container .tab_wrapper .radio_label {
+    width: 100%;
+    flex: 1;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tab_container .tab_wrapper .radio_label span {
+    color: gray;
+    font-weight: bold;
+}
+
+.tab_container .tab_wrapper #potato:checked~#potatoLabel span,
+.tab_container .tab_wrapper #sweetpotato:checked~#sweetPotatoLabel span,
+.tab_container .tab_wrapper #curry:checked~#curryLabel span {
+    color: black;
+}
+
+.tab_container .tab_wrapper #potato:checked~.bar {
+    left: 0%;
+}
+
+.tab_container .tab_wrapper #sweetpotato:checked~.bar {
+    left: 33%;
+}
+
+.tab_container .tab_wrapper #curry:checked~.bar {
+    left: 66%;
+}
+
+.tab_container .tab_wrapper .bar {
+    width: 33.3%;
+    height: 52px;
+    border-bottom: 2px #16aeb8 solid;
+    position: absolute;
+    z-index: 1;
+    transition: 100ms;
+}
